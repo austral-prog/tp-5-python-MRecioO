@@ -31,7 +31,7 @@ class Library:
             self.__books.append(add)
 
     # 1.2 List All Books
-    def list_all_books(self):
+    def list_all_books(self) -> None:
         for libro in self.__books:
             print(libro)
 

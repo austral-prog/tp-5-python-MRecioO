@@ -24,3 +24,4 @@ class User:
 
     def increment_checkins(self)->None:
         self.__number_of_checkins += 1
+        

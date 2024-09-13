@@ -38,7 +38,7 @@ class Book:
             return self.__isbn == other.__isbn
         return False
 
-    def display_info(self):
+    def display_info(self) -> None:
         print([self.__isbn, self.__title, self.__author, self.__available, self.__checkout_num])
 
 
