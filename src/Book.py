@@ -1,5 +1,5 @@
 class Book:
-    def __init__(self, isbn: str, title: str, author: str, available: bool = True, checkout_num: int=0):
+    def __init__(self, isbn: str, title: str, author: str, available: bool = True, checkout_num: int=0) -> None:
         self.__isbn = isbn
         self.__title = title
         self.__author = author
@@ -42,7 +42,4 @@ class Book:
         print([self.__isbn, self.__title, self.__author, self.__available, self.__checkout_num])
 
 
-book: Book = Book("9780743273565", "The Great Gatsby", "Fitzgerald", )
 
-
-book.display_info()
