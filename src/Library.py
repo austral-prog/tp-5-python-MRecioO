@@ -1,4 +1,4 @@
-
+from typing import List
 
 from src.Book import Book
 from src.User import User
@@ -6,22 +6,22 @@ from src.User import User
 
 class Library:
     def __init__(self):
-        self.__books: list[Book] = []
-        self.__users: list[User] = []
-        self.__checked_out_books: list[Book] = []
-        self.__checked_in_books: list[Book] = []
+        self.__books: List[Book] = []
+        self.__users: List[User] = []
+        self.__checked_out_books: List[Book] = []
+        self.__checked_in_books: List[Book] = []
 
     # Getters
-    def get_books(self) -> list[Book]:
+    def get_books(self) -> List[Book]:
         return self.__books
 
-    def get_users(self) -> list[User]:
+    def get_users(self) -> List[User]:
         return self.__users
 
-    def get_checked_out_books(self) -> list[Book]:
+    def get_checked_out_books(self) -> List[Book]:
         return self.__checked_out_books
 
-    def get_checked_in_books(self) -> list[Book]:
+    def get_checked_in_books(self) -> List[Book]:
         return self.__checked_in_books
 
     # 1.1 Add Book
@@ -69,6 +69,3 @@ class Library:
     def add_user(self, dni: int, name: str) -> None:
         self.__users.append(User(dni, name))
 
-
-a = Book("9780743273565", "The Great Gatsby", "Fitzgerald")
-print(a)
